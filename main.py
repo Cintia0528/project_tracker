@@ -15,7 +15,7 @@ st.set_page_config(
 INITIAL_TASKS = [
     {
         "Task": "Finish VIP app",
-        "Owner": "You",
+        "Owner": "Cintia",
         "Start": date(2026, 9, 17),
         "End": date(2026, 9, 30),
         "Status": "In progress",
@@ -78,7 +78,7 @@ INITIAL_TASKS = [
     },
     {
         "Task": "Graph DB",
-        "Owner": "You",
+        "Owner": "Cintia",
         "Start": date(2026, 9, 17),
         "End": date(2026, 12, 31),
         "Status": "In progress",
@@ -87,7 +87,7 @@ INITIAL_TASKS = [
     },
     {
         "Task": "RAG artifacts",
-        "Owner": "You",
+        "Owner": "Cintia",
         "Start": date(2026, 9, 17),
         "End": date(2026, 12, 31),
         "Status": "In progress",
@@ -374,8 +374,8 @@ with tab_tasks:
 
                     new_owner = st.selectbox(
                         "Owner",
-                        ["You", "Pali", "Both"],
-                        index=["You", "Pali", "Both"].index(task["Owner"]),
+                        ["Cintia", "Pali", "Both"],
+                        index=["Cintia", "Pali", "Both"].index(task["Owner"]),
                         key=f"owner_{index}",
                     )
 
@@ -486,7 +486,7 @@ with tab_add:
         with col1:
             owner = st.selectbox(
                 "Owner",
-                ["You", "Pali", "Both"],
+                ["Cintia", "Pali", "Both"],
             )
 
             category = st.selectbox(
@@ -567,5 +567,5 @@ st.divider()
 
 st.caption(
     "Local persistence: tasks.csv. "
-    "You can edit dates, owners, status, categories and notes at any time."
+    "Cintia can edit dates, owners, status, categories and notes at any time."
 )
